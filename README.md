@@ -2,6 +2,8 @@
 
 A sample cordova project. This example is using cordova 5.0 and utilized multiple plugins.
 
+http://www.meetup.com/Winnipeg-Android/events/221783607/
+
 #### Install Cordova
 You will need to install npm and nodejs on your computer. This is realtively easy. Once these are done you can install cordova.
 
