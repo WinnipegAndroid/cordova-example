@@ -1,0 +1,32 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Camera\"><param name=\"browser-package\" value=\"Camera\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.winnipegandroid.example"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.winnipegandroid.example"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.winnipegandroid.example"
+        }
+    },
+    "dependent_plugins": {}
+}
