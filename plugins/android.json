@@ -11,6 +11,10 @@
                         {
                             "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Contacts\"><param name=\"android-package\" value=\"org.apache.cordova.contacts.ContactManager\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -21,6 +25,26 @@
                         {
                             "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_CONTACTS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -29,6 +53,12 @@
     },
     "installed_plugins": {
         "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.winnipegandroid.example"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.winnipegandroid.example"
+        },
+        "cordova-plugin-contacts": {
             "PACKAGE_NAME": "com.winnipegandroid.example"
         }
     },

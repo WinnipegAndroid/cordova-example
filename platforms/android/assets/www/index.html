@@ -33,9 +33,21 @@
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
+                <p id="geolocation">Finding geolocation...</p>
+                <button onclick="createContact();">Create a contact named Dan</button><br>
             </div>
         </div>
+
+        <button onclick="capturePhoto();">Capture Photo</button> <br>
+        <button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
+        <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
+        <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
+        <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+        <img style="display:none;" id="largeImage" src="" />
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/camera.js"></script>
+        <script type="text/javascript" src="js/geo.js"></script>
     </body>
 </html>
